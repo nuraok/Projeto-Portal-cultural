@@ -1,13 +1,42 @@
-<DOCTYPE html> 
-<!-- Opa, Henri passou aq! Troque o nome da pasta principal (recomendado) --> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de compilador "trabalho ifsp"</title>
-    <link rel="stylesheet" href="dist/output.css">
+    <title>Document</title>
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-<script src="codex.js"></script>
+
+<body class="relative min-h-screen">
+
+    <div class="absolute left-0 right-0 top-0 h-20 bg-red-500">
+        <input type="text" class="bg-white absolute top-5 h-10 left-1/4 right-1/4 rounded p-4">
+        <div class="absolute right-10 top-5 h-10 w-10 bg-white"></div>
+        <div class="absolute right-30 top-5 h-10 w-10 bg-white"></div>
+    </div>
+
+    <div id="sumario" class="absolute left-0 w-70 top-20 bottom-0 bg-green-600 flex flex-col pt-4">
+        <h2 class="text-center mb-4 text-2xl">Sumario</h2>
+        <hr class="mb-4 w-62 mx-auto">
+        <div class="transition-colors duration-300 h-15 text-2xl"><a href="#mapa" class="block w-full h-full">mapa</a>
+        </div>
+        <div class="transition-colors duration-300 h-15 text-2xl">biblioteca</div>
+        <div class="transition-colors duration-300 h-15 text-2xl">salvos</div>
+        <div class="transition-colors duration-300 h-15 text-2xl"><a href="#noticias"
+                class="block w-full h-full">noticias</a></div>
+        <div class="transition-colors duration-300 h-15 text-2xl"><a href="#sites" class="block w-full h-full">sites</a>
+        </div>
+    </div>
+    <section class="absolute left-70 top-20 bg-amber-100 right-75 bottom-0 overflow-y-scroll scroll-smooth">
+        <div id="mapa" class=""></div>
+        <div id="noticias" class=""></div>
+        <div id="sites" class=""></div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+    <script src="sumario.js"></script>
 </body>
+
 </html>
