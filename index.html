@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,11 @@
 </head>
 
 <body class="relative min-h-screen">
+    <div class="w-10 h-50 bg-green-400 absolute z-10 right-10 top-15" id="configm"></div>
 
     <div class="absolute left-0 right-0 top-0 h-20 bg-red-500">
         <input type="text" class="bg-white absolute top-5 h-10 left-1/4 right-1/4 rounded p-4">
-        <div class="absolute right-10 top-5 h-10 w-10 bg-white"></div>
-        <div class="absolute right-30 top-5 h-10 w-10 bg-white"></div>
+        <button id="configb" class="absolute right-10 top-5 h-10 w-10 bg-white flex items-center justify-center rounded cursor-pointer hover:bg-gray-100"></button>
     </div>
 
     <div id="sumario" class="absolute left-0 w-70 top-20 bottom-0 bg-green-600 flex flex-col pt-4">
@@ -28,14 +28,18 @@
         <div class="transition-colors duration-300 h-15 text-2xl"><a href="#sites" class="block w-full h-full">sites</a>
         </div>
     </div>
+
     <section class="absolute left-70 top-20 bg-amber-100 right-75 bottom-0 overflow-y-scroll scroll-smooth">
-        <div id="mapa" class=""></div>
-        <div id="noticias" class=""></div>
-        <div id="sites" class=""></div>
+        <div id="mapa" class="bg-cyan-400 w-150 h-150 mx-auto mt-30 scroll-mt-30"></div>
+        <hr class="my-20">
+        <div id="noticias" class="scroll-mt-20"></div>
+        <hr class="my-20">
+        <div id="sites" class="scroll-mt-20"></div>
+        <footer class="w-full h-30 bg-blue-600 mt-0"></footer>
     </section>
 
     <script src="script.js"></script>
-    <script src="dark-mode.js"></script>
+    <script src="configb.js"></script>
     <script src="sumario.js"></script>
 </body>
 
